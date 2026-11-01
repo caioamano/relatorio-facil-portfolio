@@ -148,9 +148,9 @@ O projeto continua recebendo melhorias, especialmente na apresentação visual d
 
 ## Sobre este repositório
 
-Este repositório apresenta o estudo de caso, as demonstrações e a documentação do Relatório Fácil.
+Este repositório disponibiliza a documentação, os códigos-fonte utilizados na demonstração, arquivos de dados fictícios e exemplos dos relatórios gerados.
 
-O código-fonte completo, o executável e a planilha comercial não são disponibilizados publicamente, pois fazem parte da estrutura de desenvolvimento e distribuição do produto.
+O pacote comercial completo, incluindo os arquivos de distribuição e a versão comercial da planilha, não está disponibilizado publicamente.
 
 ---
 
