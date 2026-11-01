@@ -83,6 +83,29 @@ Esses dados permitem demonstrar o processamento de um volume maior de registros,
 
 Os valores são fictícios e utilizados exclusivamente para demonstração e testes.
 
+## Tecnologias utilizadas
+
+**Ferramentas principais:**
+- Microsoft Excel
+- VBA (Visual Basic for Applications)
+- Python
+
+**Bibliotecas utilizadas na implementação:**
+- Pandas
+- OpenPyXL
+- Matplotlib
+- ReportLab
+
+## Processo de desenvolvimento e uso de Inteligência Artificial
+
+O desenvolvimento do Relatório Fácil contou com o apoio de ferramentas de Inteligência Artificial como copiloto durante a implementação e evolução do projeto.
+
+Como meus conhecimentos em Python ainda estão em desenvolvimento, utilizei a IA para auxiliar na construção de partes do código, na integração entre as tecnologias e na identificação e correção de problemas.
+
+Minha participação envolveu a definição da proposta e dos requisitos funcionais, o direcionamento do desenvolvimento, a realização de testes, a conferência dos resultados e a identificação de melhorias necessárias.
+
+O projeto também se tornou uma oportunidade prática de aprendizado. Estou aprofundando meus conhecimentos em Python e nas bibliotecas utilizadas, como Pandas, OpenPyXL, Matplotlib e ReportLab, buscando compreender melhor o código e desenvolver autonomia para implementar e aprimorar suas funcionalidades.
+
 ## Testes e validação
 
 Durante o desenvolvimento, foram realizados testes de funcionalidades, processamento de dados e integração entre Excel, VBA e Python.
@@ -101,16 +124,6 @@ Entre as situações verificadas estão:
 - Geração de relatórios em PDF.
 
 Os testes foram realizados com dados fictícios e cenários controlados.
-
-## Tecnologias utilizadas
-
-- Microsoft Excel
-- VBA (Visual Basic for Applications)
-- Python
-- Pandas
-- OpenPyXL
-- Matplotlib
-- ReportLab
 
 ## Aprendizados
 
@@ -160,7 +173,7 @@ O pacote comercial completo, incluindo os arquivos de distribuição e a versão
 4. Consulte as abas de cadastro, vendas e dashboard.
 5. Confira os relatórios gerados com os dados fictícios.
 
-**Requisitos:** Microsoft Excel desktop para Windows com suporte a macros VBA. A geração de relatórios também utiliza o programa auxiliar Python, conforme a configuração da demonstração.
+**Requisitos:** Microsoft Excel desktop para Windows com suporte a macros VBA. A geração completa dos relatórios também depende do programa auxiliar Python e de suas dependências, conforme a configuração da demonstração.
 
 ---
 
