@@ -152,6 +152,16 @@ Este repositório disponibiliza a documentação, os códigos-fonte utilizados n
 
 O pacote comercial completo, incluindo os arquivos de distribuição e a versão comercial da planilha, não está disponibilizado publicamente.
 
+## Como testar a demonstração
+
+1. Acesse a pasta `demo` deste repositório.
+2. Baixe o arquivo `RelatorioFacil_DadosFicticios_Portifolio.xlsm`.
+3. Abra o arquivo no Microsoft Excel desktop.
+4. Consulte as abas de cadastro, vendas e dashboard.
+5. Confira os relatórios gerados com os dados fictícios.
+
+**Requisitos:** Microsoft Excel desktop para Windows com suporte a macros VBA. A geração de relatórios também utiliza o programa auxiliar Python, conforme a configuração da demonstração.
+
 ---
 
 **Desenvolvido por Caio Amano**
