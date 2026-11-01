@@ -1,71 +1,159 @@
-
 # Relatório Fácil
 
-### Automação de relatórios comerciais com Excel e Python
+### Automação de relatórios comerciais com Excel, VBA e Python
 
-Projeto pessoal de desenvolvimento de uma solução integrada para processar dados comerciais, validar informações e gerar relatórios em PDF.
+Projeto pessoal de desenvolvimento de uma solução integrada para organizar dados comerciais, automatizar processos, validar informações e gerar relatórios gerenciais em PDF.
 
-O objetivo é demonstrar a aplicação de programação e automação na resolução de problemas operacionais e na organização de informações para análise.
+O objetivo é demonstrar como a integração entre ferramentas de produtividade e programação pode ajudar a reduzir tarefas repetitivas, melhorar a consistência dos dados e transformar registros comerciais em informações úteis para análise.
+
+## Demonstração
+
+O sistema gera relatórios gerenciais com indicadores financeiros, gráficos, ranking de produtos e informações sobre estoque.
+
+### 1. Relatório gerencial
+
+![Relatório gerencial](assets/relatorio-gerencial.jpg)
+
+### 2. Ranking de produtos
+
+![Ranking de produtos](assets/ranking-produtos.jpg)
+
+### 3. Controle de estoque
+
+![Controle de estoque](assets/controle-estoque.jpg)
+
+*As demonstrações utilizam exclusivamente dados fictícios.*
 
 ## Contexto e problema
 
 A organização de dados comerciais e a elaboração de relatórios podem envolver tarefas repetitivas, conferências manuais e informações inconsistentes.
 
-O Relatório Fácil foi desenvolvido com a proposta de simplificar parte desse processo, integrando ferramentas conhecidas do ambiente de trabalho com um programa em Python.
+Pequenos comércios precisam acompanhar produtos, vendas, faturamento e estoque, mas nem sempre dispõem de ferramentas simples e acessíveis para consolidar essas informações.
 
-## Solução desenvolvida
+O Relatório Fácil foi desenvolvido com a proposta de simplificar parte desse processo, integrando uma interface em Excel a um programa escrito em Python.
 
-A solução integra uma planilha Excel habilitada para macros com um programa Python responsável pelo processamento dos dados e pela geração de relatórios.
+## Solução e arquitetura
 
-O fluxo de trabalho envolve a entrada de dados comerciais, a execução de validações, o cálculo de indicadores e a geração de documentos para consulta dos resultados.
+A solução utiliza três componentes principais:
+
+- **Microsoft Excel:** interface para cadastro de produtos, registro de vendas e consulta de indicadores.
+- **VBA:** automação dos formulários, execução de rotinas e validação das operações.
+- **Python:** processamento dos dados, cálculo de indicadores, criação de gráficos e geração dos relatórios em PDF.
+
+### Fluxo de funcionamento
+
+1. O usuário cadastra produtos e registra vendas na planilha.
+2. As macros VBA executam as validações e automatizam as operações.
+3. O Excel aciona o programa Python.
+4. O Python processa os dados comerciais.
+5. O sistema gera um relatório gerencial em PDF.
 
 ## Funcionalidades implementadas
 
-- Processamento de arquivos comerciais em Excel e CSV.
-- Integração entre botões e macros do Excel e o programa Python.
-- Validação de produtos e informações de vendas.
-- Verificação de estoque insuficiente.
-- Cálculo de indicadores comerciais.
+- Cadastro de produtos com identificação por SKU.
+- Registro de vendas e formas de pagamento.
+- Validação de SKUs duplicados e produtos inexistentes.
+- Verificação de disponibilidade de estoque.
+- Validação de quantidades e descontos.
+- Cálculo de faturamento e custo dos produtos vendidos.
+- Estimativa de lucro bruto e margem bruta.
+- Cálculo de unidades vendidas e ticket médio.
+- Ranking de produtos mais vendidos.
+- Identificação de produtos abaixo do estoque mínimo.
+- Processamento de arquivos comerciais em Excel e CSV pelo motor Python.
 - Geração automatizada de relatórios em PDF.
-- Apresentação de resultados em tabelas e gráficos.
+- Apresentação de indicadores em tabelas e gráficos.
+
+## Demonstração com dados fictícios
+
+Para validar o funcionamento da solução, foi criada uma base demonstrativa com 180 registros de vendas fictícias, abrangendo setembro e outubro de 2026.
+
+No relatório consolidado da demonstração, foram apresentados os seguintes resultados:
+
+| Indicador | Resultado |
+|---|---:|
+| Faturamento | R$ 15.812,58 |
+| Lucro bruto estimado | R$ 8.556,68 |
+| Unidades vendidas | 329 |
+| Vendas registradas | 180 |
+| Ticket médio | R$ 87,85 |
+| Margem bruta estimada | 54,1% |
+
+Esses dados permitem demonstrar o processamento de um volume maior de registros, a consolidação de indicadores e a geração de relatórios com informações de produtos e estoque.
+
+Os valores são fictícios e utilizados exclusivamente para demonstração e testes.
+
+## Testes e validação
+
+Durante o desenvolvimento, foram realizados testes de funcionalidades, processamento de dados e integração entre Excel, VBA e Python.
+
+Entre as situações verificadas estão:
+
+- Cadastro e registro de produtos.
+- Registro de vendas.
+- Bloqueio de SKU duplicado.
+- Identificação de produtos inexistentes.
+- Bloqueio de vendas com estoque insuficiente.
+- Validação de descontos.
+- Conferência dos cálculos financeiros.
+- Consolidação de vendas por forma de pagamento.
+- Atualização do ranking de produtos.
+- Geração de relatórios em PDF.
+
+Os testes foram realizados com dados fictícios e cenários controlados.
 
 ## Tecnologias utilizadas
 
 - Microsoft Excel
-- VBA
+- VBA (Visual Basic for Applications)
 - Python
-- Processamento de dados
-- Geração de relatórios em PDF
-
-## Testes e validação
-
-Durante o desenvolvimento, foram realizados testes de integração, processamento de arquivos e geração de relatórios.
-
-Também foram testadas validações para situações como produtos inexistentes e estoque insuficiente.
-
-O projeto continua em desenvolvimento, com melhorias na apresentação visual dos relatórios e nos gráficos.
-
-## Demonstração
-
-Esta seção será complementada com capturas da interface do Excel e exemplos de relatórios gerados com dados fictícios.
+- Pandas
+- OpenPyXL
+- Matplotlib
+- ReportLab
 
 ## Aprendizados
 
-O desenvolvimento envolve prática em:
+O desenvolvimento do Relatório Fácil proporcionou experiência prática em:
 
-- Integração entre ferramentas diferentes.
-- Automação de tarefas com Python.
-- Validação e consistência de dados.
-- Organização de indicadores comerciais.
-- Testes de funcionalidades e tratamento de erros.
-- Documentação de um projeto de software.
+- Integração entre diferentes ferramentas.
+- Automação de processos com Python e VBA.
+- Processamento e validação de dados.
+- Cálculo e organização de indicadores comerciais.
+- Criação de gráficos e relatórios automatizados.
+- Testes de funcionalidades e integração.
+- Tratamento de erros.
+- Documentação e organização de projetos de software.
+- Desenvolvimento iterativo e melhoria contínua.
 
-## Status
+## Limitações conhecidas
 
-Projeto pessoal em desenvolvimento.
+Os indicadores de lucro apresentados representam estimativas de lucro bruto, calculadas pela diferença entre faturamento e custo dos produtos vendidos. Não incluem automaticamente despesas operacionais, impostos, taxas ou outros custos.
 
-Este repositório apresenta o estudo de caso e a documentação do projeto. O código-fonte completo, o executável e a planilha comercial não são disponibilizados aqui.
+O controle de estoque da versão atual considera o estoque inicial menos as quantidades vendidas. Reposições, devoluções e ajustes ainda não são contemplados integralmente.
+
+O sistema não substitui ferramentas fiscais ou contábeis.
+
+## Status do desenvolvimento
+
+**Projeto pessoal em desenvolvimento contínuo.**
+
+A versão atual já possui integração entre Excel, VBA e Python, com cadastro de produtos, registro de vendas, validação de dados, indicadores comerciais e geração automatizada de relatórios em PDF.
+
+Foram realizados testes com uma base demonstrativa de 180 registros de vendas fictícias, abrangendo setembro e outubro de 2026.
+
+O projeto continua recebendo melhorias, especialmente na apresentação visual dos relatórios, nos gráficos, nas validações, na documentação e na experiência de utilização.
+
+**Observação:** os dados apresentados nas demonstrações são inteiramente fictícios e utilizados exclusivamente para fins de teste e apresentação do projeto.
+
+## Sobre este repositório
+
+Este repositório apresenta o estudo de caso, as demonstrações e a documentação do Relatório Fácil.
+
+O código-fonte completo, o executável e a planilha comercial não são disponibilizados publicamente, pois fazem parte da estrutura de desenvolvimento e distribuição do produto.
 
 ---
 
-Desenvolvido por Caio Amano.
+**Desenvolvido por Caio Amano**
+
+[GitHub](https://github.com/caioamano) · [LinkedIn](https://www.linkedin.com/in/caio-henrique-amano/)
